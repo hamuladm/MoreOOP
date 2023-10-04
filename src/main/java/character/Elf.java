@@ -10,7 +10,7 @@ public class Elf extends Character{
     @Override
     public void kick(Character opponent){
         if (getPower() > opponent.getPower()){
-            opponent.setPower(0);
+            opponent.setHp(0);
         }
         else {
             opponent.setPower(opponent.getPower() - 1);
