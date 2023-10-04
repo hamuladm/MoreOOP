@@ -2,9 +2,10 @@ package character;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@AllArgsConstructor
+@AllArgsConstructor @NoArgsConstructor
 public abstract class Character {
     @Getter @Setter
     private int power;
@@ -20,7 +21,8 @@ public abstract class Character {
         this.hp = hp > 0 ? hp: 0;
     }
 
-    public String ToString(){
+    @Override
+    public String toString(){
         return this.getClass().getSimpleName() + "{hp=" + hp + ", power=" + power + "}";
     }
 }

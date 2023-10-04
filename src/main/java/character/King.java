@@ -1,9 +1,10 @@
 package character;
 
+
 public class King extends Character{
 
     public static AttrGen generator = new AttrGen();
-    public King(int power, int hp){
+    public King(){
         super(generator.GenPow(5, 15), generator.GenHp(5, 15));
     }
 

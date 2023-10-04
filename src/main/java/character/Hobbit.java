@@ -1,8 +1,9 @@
 package character;
 
+
 public class Hobbit extends Character{
 
-    public Hobbit(int power, int hp){
+    public Hobbit(){
         super(0, 3);
     }
 
